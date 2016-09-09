@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     49440,       1086]
-NotebookOptionsPosition[     48304,       1044]
-NotebookOutlinePosition[     48637,       1059]
-CellTagsIndexPosition[     48594,       1056]
+NotebookDataLength[     50864,       1128]
+NotebookOptionsPosition[     49532,       1080]
+NotebookOutlinePosition[     49865,       1095]
+CellTagsIndexPosition[     49822,       1092]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -1028,9 +1028,44 @@ j6I=
  CellChangeTimes->{{3.682386024577384*^9, 3.682386033617671*^9}}]
 }, Open  ]],
 
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"FindDistribution", "[", "durations", "]"}]], "Input",
+ CellChangeTimes->{{3.682386596845182*^9, 3.68238661111038*^9}}],
+
+Cell[BoxData[
+ TemplateBox[{
+  "FindDistribution","conenf",
+   "\"The data will be treated as continuous. Use the option \
+TargetFunctions->Discrete otherwise.\"",2,64,24,28305853762854319293,"Local"},
+  
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{{3.682386603233622*^9, 3.682386611673129*^9}}],
+
+Cell[BoxData[
+ RowBox[{"MixtureDistribution", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"0.3863544793572182`", ",", "0.613645520642782`"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"NormalDistribution", "[", 
+      RowBox[{"453.9643888862299`", ",", "27.46494033307199`"}], "]"}], ",", 
+     RowBox[{"UniformDistribution", "[", 
+      RowBox[{"{", 
+       RowBox[{"371.7045493003885`", ",", "552.1881232385833`"}], "}"}], 
+      "]"}]}], "}"}]}], "]"}]], "Output",
+ CellChangeTimes->{{3.68238660339981*^9, 3.6823866131108837`*^9}}]
+}, Open  ]],
+
 Cell["\<\
-Even overall the distribution seems to resemble normal. We need to clear data \
-little more:
+So the distribution is a mixture of uniform and normal distributions.\
+\>", "Text",
+ CellChangeTimes->{{3.682386633724189*^9, 3.682386660729117*^9}}],
+
+Cell["\<\
+But we need to clear data little more:
 
 1. I know that I started riding regularly in second half of 2012, so data \
 before that is some kind of error
@@ -1039,7 +1074,8 @@ usually ride more catiously on wet road. We will ignore it for now.
 3. Finally, it looks like the results change as I get more in shape, so we \
 will need to look at it by year.\
 \>", "Text",
- CellChangeTimes->{{3.682386315496311*^9, 3.6823864994485397`*^9}}]
+ CellChangeTimes->{{3.682386315496311*^9, 3.6823864994485397`*^9}, 
+   3.682386629599736*^9, {3.6823866672038813`*^9, 3.682386668020598*^9}}]
 }, Open  ]]
 },
 WindowSize->{951, 911},
@@ -1086,7 +1122,13 @@ Cell[CellGroupData[{
 Cell[29765, 719, 142, 2, 37, "Input"],
 Cell[29910, 723, 17811, 304, 223, "Output"]
 }, Open  ]],
-Cell[47736, 1030, 552, 11, 129, "Text"]
+Cell[CellGroupData[{
+Cell[47758, 1032, 142, 2, 37, "Input"],
+Cell[47903, 1036, 311, 7, 24, "Message"],
+Cell[48217, 1045, 550, 13, 55, "Output"]
+}, Open  ]],
+Cell[48782, 1061, 159, 3, 30, "Text"],
+Cell[48944, 1066, 572, 11, 129, "Text"]
 }, Open  ]]
 }
 ]
